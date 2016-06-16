@@ -14,6 +14,33 @@
 
 @implementation ViewController
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+    return YES;
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    NSLog(@"applicationWIllResignActive");
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSLog(@"applicationDidEnterBackground");
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    NSLog(@"applicationWillEnterForeground");
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"applicationDidBecomeActive");
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    NSLog(@"applicationWillTerminate");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
