@@ -14,41 +14,37 @@
 
 @implementation ViewController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
-    return YES;
-}
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    NSLog(@"applicationWIllResignActive");
-}
+//viewDidLoad
+//viewWillAppear
+//viewDidAppear
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    NSLog(@"applicationDidEnterBackground");
-}
+//viewWillDisappear
+//viewDidDisappear
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    NSLog(@"applicationWillEnterForeground");
-}
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    NSLog(@"applicationDidBecomeActive");
-}
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    NSLog(@"applicationWillTerminate");
-}
-
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(void)viewWillAppear {
+    [super viewWillAppear:YES];
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillAppear:YES];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:YES];
+}
 
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
